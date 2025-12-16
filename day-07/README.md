@@ -215,9 +215,9 @@ gef➤  x $rbp-0x114
 0x7fff6afc826c: 0x1ddd256d
 ```
 
-The 13^th^ value is `0x1ddd256d6afc84e8`. We can see that the random value is the first 4 bytes of the 13^th^ value.
+The 13$^{th}$ value is `0x1ddd256d6afc84e8`. We can see that the random value is the first 4 bytes of the 13$^{th}$ value.
 
-We can access the 13^th^ value using the syntax `%13$p`. Then we convert the value into integer and pass it into `handle_admin()` function.
+We can access the 13$^{th}$ value using the syntax `%13$p`. Then we convert the value into integer and pass it into `handle_admin()` function.
 
 ```python
 p.recvuntil(b'data:\n')
